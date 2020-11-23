@@ -1,6 +1,7 @@
 
 ## OpenShift Container Storage 4.5.2+ and OpenShift Container Platform 4.6.4+ on one bare metal server (KVM / libvirt / CentOS 7.9)
 
+**Note:** for lab purposes only
 
 ## TL;DR
 
