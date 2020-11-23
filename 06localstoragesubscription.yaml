@@ -1,0 +1,144 @@
+apiVersion: v1
+items:
+- apiVersion: operators.coreos.com/v1alpha1
+  kind: Subscription
+  metadata:
+    creationTimestamp: "2020-11-22T08:15:39Z"
+    generation: 1
+    labels:
+      operators.coreos.com/local-storage-operator.openshift-local-storage: ""
+    managedFields:
+    - apiVersion: operators.coreos.com/v1alpha1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:channel: {}
+          f:installPlanApproval: {}
+          f:name: {}
+          f:source: {}
+          f:sourceNamespace: {}
+          f:startingCSV: {}
+      manager: Mozilla
+      operation: Update
+      time: "2020-11-22T08:15:39Z"
+    - apiVersion: operators.coreos.com/v1alpha1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:labels:
+            .: {}
+            f:operators.coreos.com/local-storage-operator.openshift-local-storage: {}
+      manager: olm
+      operation: Update
+      time: "2020-11-22T08:15:39Z"
+    - apiVersion: operators.coreos.com/v1alpha1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          f:config:
+            .: {}
+            f:resources: {}
+        f:status:
+          .: {}
+          f:catalogHealth: {}
+          f:conditions: {}
+          f:currentCSV: {}
+          f:installPlanGeneration: {}
+          f:installPlanRef:
+            .: {}
+            f:apiVersion: {}
+            f:kind: {}
+            f:name: {}
+            f:namespace: {}
+            f:resourceVersion: {}
+            f:uid: {}
+          f:installedCSV: {}
+          f:installplan:
+            .: {}
+            f:apiVersion: {}
+            f:kind: {}
+            f:name: {}
+            f:uuid: {}
+          f:lastUpdated: {}
+          f:state: {}
+      manager: catalog
+      operation: Update
+      time: "2020-11-22T08:16:21Z"
+    name: local-storage-operator
+    namespace: openshift-local-storage
+    resourceVersion: "48703"
+    selfLink: /apis/operators.coreos.com/v1alpha1/namespaces/openshift-local-storage/subscriptions/local-storage-operator
+    uid: db398e8b-7bb8-4740-ab75-a6cb1598ebd8
+  spec:
+    channel: "4.6"
+    installPlanApproval: Automatic
+    name: local-storage-operator
+    source: redhat-operators
+    sourceNamespace: openshift-marketplace
+    startingCSV: local-storage-operator.4.6.0-202011041933.p0
+  status:
+    catalogHealth:
+    - catalogSourceRef:
+        apiVersion: operators.coreos.com/v1alpha1
+        kind: CatalogSource
+        name: certified-operators
+        namespace: openshift-marketplace
+        resourceVersion: "44956"
+        uid: 23f96fc4-5b74-4978-a5fe-9c8129878aaa
+      healthy: true
+      lastUpdated: "2020-11-22T08:15:42Z"
+    - catalogSourceRef:
+        apiVersion: operators.coreos.com/v1alpha1
+        kind: CatalogSource
+        name: community-operators
+        namespace: openshift-marketplace
+        resourceVersion: "43915"
+        uid: 1611fd16-a4b0-4f68-b390-7389ca329e0f
+      healthy: true
+      lastUpdated: "2020-11-22T08:15:42Z"
+    - catalogSourceRef:
+        apiVersion: operators.coreos.com/v1alpha1
+        kind: CatalogSource
+        name: redhat-marketplace
+        namespace: openshift-marketplace
+        resourceVersion: "47809"
+        uid: b6e30a0b-753e-47db-ba97-c417633f8164
+      healthy: true
+      lastUpdated: "2020-11-22T08:15:42Z"
+    - catalogSourceRef:
+        apiVersion: operators.coreos.com/v1alpha1
+        kind: CatalogSource
+        name: redhat-operators
+        namespace: openshift-marketplace
+        resourceVersion: "48189"
+        uid: 4280b6ae-51ce-48f8-91ec-e60f1c069395
+      healthy: true
+      lastUpdated: "2020-11-22T08:15:42Z"
+    conditions:
+    - lastTransitionTime: "2020-11-22T08:15:42Z"
+      message: all available catalogsources are healthy
+      reason: AllCatalogSourcesHealthy
+      status: "False"
+      type: CatalogSourcesUnhealthy
+    currentCSV: local-storage-operator.4.6.0-202011041933.p0
+    installPlanGeneration: 1
+    installPlanRef:
+      apiVersion: operators.coreos.com/v1alpha1
+      kind: InstallPlan
+      name: install-m2kgp
+      namespace: openshift-local-storage
+      resourceVersion: "48364"
+      uid: 7a28d2fb-f142-4283-8a92-516b91d80f42
+    installedCSV: local-storage-operator.4.6.0-202011041933.p0
+    installplan:
+      apiVersion: operators.coreos.com/v1alpha1
+      kind: InstallPlan
+      name: install-m2kgp
+      uuid: 7a28d2fb-f142-4283-8a92-516b91d80f42
+    lastUpdated: "2020-11-22T08:16:21Z"
+    state: AtLatestKnown
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""
