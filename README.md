@@ -46,6 +46,12 @@ ocs-deviceset-2-data-2-lsdnm   Bound     local-pv-c6f10c36                      
 rbd-pvc                        Bound     pvc-ee2fbc48-bcb9-416b-8f08-b9e67a2ede4b   1Gi        RWO            ocs-storagecluster-ceph-rbd   8h
 ```
 
+
+## Authors
+
+- Marc Chisinevski ([@marcredhat](https://github.com/marcredhat))
+
+
 ## Prerequisites
 
 OpenShift Container Platform 4.5 or 4.6 on baremetal
