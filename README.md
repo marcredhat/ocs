@@ -134,6 +134,14 @@ oc scale --replicas=0 deployment --all -n cluster-node-tuning-operator
 oc scale --replicas=0 deployment --all -n cluster-samples-operator
 ```
 
+## Operator catalog snapshots
+
+Operators in OpenShift change quite frequently - even within operator subscription channels. 
+And sometimes these changes introduce breaking changes.
+
+Consider using Operator catalog snapshots: https://github.com/redhat-cop/agnosticd/blob/development/docs/Operator_Catalog_Snapshots.adoc
+
+
 ## Check disks available on the baremetal server 
 
 We'll be using /dev/sdb1, /dev/sdd1 and  /dev/sdc1
