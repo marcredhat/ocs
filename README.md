@@ -142,6 +142,15 @@ And sometimes these changes introduce breaking changes.
 Consider using Operator catalog snapshots: https://github.com/redhat-cop/agnosticd/blob/development/docs/Operator_Catalog_Snapshots.adoc
 
 
+## Managing the contents on an operator catalog via simple tar.gz archives of package manifests
+
+Given that software shops most often have some kind of internal artifact repository hosted like Artifactory or Nexus, 
+allowing users to manage basic tar.gz archive files in such repositories instead of having to build/manage Operator catalog images 
+may better align with their Software Development Cycle.
+
+See https://github.com/ldojo/ocp4-operator-catalog-management
+
+
 ## Check disks available on the baremetal server 
 
 We'll be using /dev/sdb1, /dev/sdd1 and  /dev/sdc1
@@ -265,7 +274,7 @@ oc create -f https://raw.githubusercontent.com/marcredhat/ocs/main/05localstorag
 operatorgroup.operators.coreos.com/local-storage created
 ```
 
-## Creaet the local-storage-operator Subscription
+## Create the local-storage-operator Subscription
 
 ```text
 oc create -f https://raw.githubusercontent.com/marcredhat/ocs/main/06localstoragesubscription.yaml
