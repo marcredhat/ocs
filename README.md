@@ -355,9 +355,10 @@ operatorgroup.operators.coreos.com/openshift-storage-operatorgroup created
 
 ## Create the ocs-operator Subscription
 
+```text
 oc create -f https://raw.githubusercontent.com/marcredhat/ocs/main/11ocssubscription.yaml
 subscription.operators.coreos.com/ocs-operator created
-
+```
 
 ## Check that the Noobaa, OCS and Rook-Ceph Operator pods are running 
 
@@ -379,7 +380,8 @@ rook-ceph-operator-6689b96c6-gw5wc   1/1     Running   1          2m58s
 For each set of 3 OSDs increment the count. We have 9 OSD so count is 3.
 
 ```bash
-oc create -f https://raw.githubusercontent.com/marcredhat/ocs/main/12ocsstoragecluster.yaml
+#oc create -f https://raw.githubusercontent.com/marcredhat/ocs/main/12ocsstoragecluster.yaml
+ oc create -f https://github.infra.cloudera.com/raw/marccloudera/lab256/master/12ocsstoragecluster.yaml
 ```
 
 ## Install the Ceph tools
